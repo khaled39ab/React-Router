@@ -1,0 +1,11 @@
+.nav{
+    display: flex;
+    background-color: aquamarine;
+    padding: 15px;
+    justify-content: center;
+}
+
+.nav-link{
+    font-weight: 600;
+    margin: 20px;
+}

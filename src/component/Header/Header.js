@@ -1,23 +1,18 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+// import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
+import './Header.css'
 
 const Header = () => {
     return (
-        // <nav>
-        //     <Link to={'/'}>Home</Link>
-        //     <Link to={'/friends'}>Friends</Link>
-        //     <Link to={'/about'}>About</Link>
-        // </nav>
-        <Navbar bg="light" variant="light">
-            <Container>
-                <Navbar.Brand href="#home">Router</Navbar.Brand>
-                <Nav className="me-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
-                </Nav>
-            </Container>
-        </Navbar>
+        <nav className='nav'>
+            {/* <Link to={'/'}>Home</Link>
+            <Link to={'/friends'}>Friends</Link>
+            <Link to={'/about'}>About</Link> */}
+            <CustomLink className='nav-link' to={'/'}>Home</CustomLink>
+            <CustomLink className='nav-link' to={'/friends'}>Friends</CustomLink>
+            <CustomLink className='nav-link' to={'/about'}>About</CustomLink>
+        </nav>
     );
 };
 
