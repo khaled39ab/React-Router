@@ -10,7 +10,7 @@ const Friends = () => {
     }, [])
     return (
         <div>
-            <h3>Hello My {friends.length} Friends</h3>
+            <h2 style={{backgroundColor:'cyan', padding:'5px', color:'red'}}>Hello My {friends.length} Friends</h2>
             {
                 friends.map(friend =><Friend 
                     key = {friend.id}

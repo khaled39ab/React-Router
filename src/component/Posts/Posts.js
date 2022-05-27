@@ -10,7 +10,7 @@ const Posts = () => {
     },[])
     return (
         <div>
-            <h2>Explore posts are here.</h2>
+            <h2 style={{backgroundColor:'cyan', padding:'5px', color:'red'}}>Explore posts are here.</h2>
 
             {
                 posts.map (post =><Link 

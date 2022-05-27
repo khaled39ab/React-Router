@@ -11,7 +11,8 @@ const FriendDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setFriend(data))
-    }, [friendId])
+    });
+    
     return (
         <div>
             <h2 className='friend'>This is details of <span id='name'>{name}</span></h2>
